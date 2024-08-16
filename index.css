@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.gogaga-main-container {
+    background-image: url('https://res.cloudinary.com/dsylqc26n/image/upload/v1723839630/mountain_kzvtyz.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.profile {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-form {
+    background-color: white;
+    padding: 22px 38px 22px 38px;
+    border-radius: 12px;
+}
+
+.input-container {
+    border-radius: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-weight: 500;
+    margin: 0.5rem 0.5rem;
+    overflow: hidden;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-out-container {
+    text-align: right;
+}
+
+input,
+select {
+    outline: none;
+    border: none;
+    margin-top: 0.5rem;
+    color: #333;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rating {
+    width: auto;
+    color: #333;
+}
+
+h1,
+p {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 576px) {
+    .gogaga-main-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .gogaga-main-container p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .rating {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .ogaga-main-container {
+        padding: 12px;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+}
